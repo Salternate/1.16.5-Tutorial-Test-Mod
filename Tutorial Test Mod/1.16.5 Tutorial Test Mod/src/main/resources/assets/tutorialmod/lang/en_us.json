@@ -1,4 +1,7 @@
 {
   "item.tutorialmod.void_diamond": "Void Diamond",
-  "item.tutorialmod.endstone_encased_diamond": "Endstone-Encased Diamond"
+  "block.tutorialmod.void_diamond_ore": "Void Diamond Ore",
+  "item.tutorialmod.endstone_encased_diamond": "Endstone-Encased Diamond",
+
+  "itemGroup.tutorialModTab": "Tutorial Mod"
 }
