@@ -21,9 +21,17 @@ public class ModBlocks
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
+
+
     public static final RegistryObject<Block> VOID_DIAMOND_ORE = registerBlock("void_diamond_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> VOID_DIAMOND_BLOCK = registerBlock("void_diamond_block",
+            () -> new Block(AbstractBlock.Properties.create(Material.CORAL)
+                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
