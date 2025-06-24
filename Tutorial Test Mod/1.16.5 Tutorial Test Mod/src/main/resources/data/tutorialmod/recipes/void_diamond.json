@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorialmod:void_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:void_diamond",
+    "count": 9
+  }
+}

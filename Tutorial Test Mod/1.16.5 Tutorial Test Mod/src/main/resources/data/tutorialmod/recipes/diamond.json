@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorialmod:endstone_encased_diamond"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond"
+  }
+}
