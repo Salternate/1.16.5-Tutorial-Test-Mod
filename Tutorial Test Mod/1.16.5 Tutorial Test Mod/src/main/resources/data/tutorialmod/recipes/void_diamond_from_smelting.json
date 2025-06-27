@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tutorialmod:endstone_encased_diamond"
+  },
+  "result": "tutorialmod:void_diamond",
+  "experience": 7.0,
+  "cookingtime": 200
+}

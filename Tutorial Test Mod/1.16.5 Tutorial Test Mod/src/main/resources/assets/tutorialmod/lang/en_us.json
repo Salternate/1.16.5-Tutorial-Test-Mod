@@ -3,6 +3,7 @@
   "block.tutorialmod.void_diamond_ore": "Void Diamond Ore",
   "block.tutorialmod.void_diamond_block": "Void Diamond Block",
   "item.tutorialmod.endstone_encased_diamond": "Endstone-Encased Diamond",
+  "item.tutorialmod.void_polarity_displacement_channeling_device": "Void Polarity-Displacement Channeling Device",
 
   "itemGroup.tutorialModTab": "Tutorial Mod"
 }

@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.item;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.item.custom.VoidPolarityDisplacementChannelingDevice;
 import net.minecraft.item.Item;
 //import net.minecraft.item.ItemGroup;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,9 @@ public class ModItems
 
     public static final RegistryObject<Item> ENDSTONE_ENCASED_DIAMOND = ITEMS.register("endstone_encased_diamond",
             () -> new Item(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> VOID_POLARITY_DISPLACEMENT_CHANNELING_DEVICE = ITEMS.register("void_polarity_displacement_channeling_device",
+            () -> new VoidPolarityDisplacementChannelingDevice(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
 
     public static void register(IEventBus eventBus)
     {
