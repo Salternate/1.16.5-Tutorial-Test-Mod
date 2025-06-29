@@ -5,5 +5,7 @@
   "item.tutorialmod.endstone_encased_diamond": "Endstone-Encased Diamond",
   "item.tutorialmod.void_polarity_displacement_channeling_device": "Void Polarity-Displacement Channeling Device",
 
+  "block.tutorialmod.saturator": "Saturator",
+
   "itemGroup.tutorialModTab": "Tutorial Mod"
 }

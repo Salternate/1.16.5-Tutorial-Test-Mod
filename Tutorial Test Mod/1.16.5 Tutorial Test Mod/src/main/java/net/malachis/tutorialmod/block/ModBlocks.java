@@ -5,14 +5,19 @@ import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.FurnaceBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 
 import java.util.function.Supplier;
 
@@ -22,7 +27,6 @@ public class ModBlocks
             = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
 
-
     public static final RegistryObject<Block> VOID_DIAMOND_ORE = registerBlock("void_diamond_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
@@ -30,6 +34,10 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_DIAMOND_BLOCK = registerBlock("void_diamond_block",
             () -> new Block(AbstractBlock.Properties.create(Material.CORAL)
                     .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> SATURATOR = registerBlock("saturator",
+            () -> new FurnaceBlock(AbstractBlock.Properties.create(Material.IRON)
+                    .setRequiresTool().hardnessAndResistance(3.5F)));
 
 
 

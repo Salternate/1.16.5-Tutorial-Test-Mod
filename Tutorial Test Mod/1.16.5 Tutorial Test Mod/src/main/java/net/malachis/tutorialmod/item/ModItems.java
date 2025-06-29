@@ -18,7 +18,7 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
 
     public static final RegistryObject<Item> ENDSTONE_ENCASED_DIAMOND = ITEMS.register("endstone_encased_diamond",
-            () -> new Item(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP).maxStackSize(8)));
 
     public static final RegistryObject<Item> VOID_POLARITY_DISPLACEMENT_CHANNELING_DEVICE = ITEMS.register("void_polarity_displacement_channeling_device",
             () -> new VoidPolarityDisplacementChannelingDevice(new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP).maxStackSize(1)));
