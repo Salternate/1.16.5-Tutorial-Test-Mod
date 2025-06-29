@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.block;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.block.custom.VoidEnergyBlock;
 import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -39,6 +40,7 @@ public class ModBlocks
             () -> new FurnaceBlock(AbstractBlock.Properties.create(Material.IRON)
                     .setRequiresTool().hardnessAndResistance(3.5F)));
 
+    public static final RegistryObject<Block> VOID_ENERGY_BLOCK = registerBlock("void_energy_block", () -> new VoidEnergyBlock(AbstractBlock.Properties.create(Material.AIR).harvestLevel(4).hardnessAndResistance(7f)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
