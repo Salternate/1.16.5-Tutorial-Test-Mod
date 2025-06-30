@@ -8,5 +8,8 @@
 
   "block.tutorialmod.saturator": "Saturator",
 
+  "tooltip.tutorialmod.void_polarity_displacement_channeling_device": "\u00A77Absorbs a fragment of your \u00A7chealth\u00A7r\u00A77, leaving a\u00A7r \u00A76filler\u00A7r \u00A77behind.\n\nHold \u00A7r\u00A7eSHIFT\u00A7r \u00A77for\u00A7r \u00A7fAdvanced Info.",
+  "tooltip.tutorialmod.void_polarity_displacement_channeling_device_shift": "\u00A77Absorbs a fragment of your \u00A7chealth\u00A7r\u00A77, leaving a\u00A7r \u00A76filler\u00A7r \u00A77behind.\nSwaps Health for Absorption 1:1.\u00A7r\nDisplaying\u00A7r \u00A7fAdvanced Info.",
+
   "itemGroup.tutorialModTab": "Tutorial Mod"
 }

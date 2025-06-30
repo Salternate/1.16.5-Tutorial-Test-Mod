@@ -1,18 +1,39 @@
 package net.malachis.tutorialmod.item.custom;
 
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.util.*;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 // Add use animation if possible
 
 public class VoidPolarityDisplacementChannelingDevice extends Item {
     public VoidPolarityDisplacementChannelingDevice(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+
+        if(Screen.hasShiftDown())
+        {
+            tooltip.add(new TranslationTextComponent("tooltip.tutorialmod.void_polarity_displacement_channeling_device_shift"));
+        }
+        else {
+            tooltip.add(new TranslationTextComponent("tooltip.tutorialmod.void_polarity_displacement_channeling_device"));
+        }
+
+        super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
     //static float storedAbsorption = 0;
