@@ -9,13 +9,21 @@
 //import net.minecraft.util.datafix.TypeReferences;
 //import net.minecraft.util.registry.Registry;
 //
+//import javax.annotation.Nullable;
 //import java.util.Set;
 //import java.util.function.Supplier;
 //
-//public class ModTileEntities extends TileEntityType {
-//    public ModTileEntities(Supplier p_i51497_1_, Set p_i51497_2_, Type p_i51497_3_) {
+//public class ModTileEntityType extends TileEntityType {
+//    public ModTileEntityType(Supplier p_i51497_1_, Set p_i51497_2_, Type p_i51497_3_) {
 //        super(p_i51497_1_, p_i51497_2_, p_i51497_3_);
 //    }
+//
+//    @Nullable
+//    @Override
+//    public TileEntity create() {
+//        return super.create();
+//    }
+//
 //
 //
 //    public static final TileEntityType<FurnaceTileEntity> SATURATOR = register("saturator", TileEntityType.Builder.create(FurnaceTileEntity::new, ModBlocks.SATURATOR));
