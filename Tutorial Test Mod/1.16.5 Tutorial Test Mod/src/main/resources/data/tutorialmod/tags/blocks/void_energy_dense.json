@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:void_diamond_ore",
+    "tutorialmod:void_diamond_block",
+    "tutorialmod:void_energy_block"
+  ]
+}
