@@ -55,6 +55,9 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_STONE_BRICK_STAIRS = registerBlock("void_stone_brick_stairs", () -> new StairsBlock(() -> VOID_STONE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
+    public static final RegistryObject<Block> VOID_DIAMOND_BLOCK_STAIRS = registerBlock("void_diamond_block_stairs", () -> new StairsBlock(() -> VOID_DIAMOND_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

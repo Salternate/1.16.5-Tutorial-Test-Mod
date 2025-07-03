@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/void_diamond_block",
+    "top": "tutorialmod:block/void_diamond_block",
+    "side": "tutorialmod:block/void_diamond_block"
+  }
+}
