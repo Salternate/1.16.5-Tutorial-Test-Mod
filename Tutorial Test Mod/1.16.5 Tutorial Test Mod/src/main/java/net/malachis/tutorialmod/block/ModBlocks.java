@@ -7,6 +7,7 @@ import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FurnaceBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -51,6 +52,8 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_BEDROCK = registerBlock("void_bedrock", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
 
     public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2f)));
+
+    public static final RegistryObject<Block> VOID_STONE_BRICK_STAIRS = registerBlock("void_stone_brick_stairs", () -> new StairsBlock(() -> VOID_STONE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
 
 
