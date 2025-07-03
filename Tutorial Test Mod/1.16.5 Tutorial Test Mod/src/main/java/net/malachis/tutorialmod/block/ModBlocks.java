@@ -30,17 +30,21 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_DIAMOND_ORE = registerBlock("void_diamond_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+                    .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> VOID_DIAMOND_BLOCK = registerBlock("void_diamond_block",
             () -> new Block(AbstractBlock.Properties.create(Material.CORAL)
-                    .harvestLevel(3).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+                    .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> SATURATOR = registerBlock("saturator",
             () -> new FurnaceBlock(AbstractBlock.Properties.create(Material.IRON)
-                    .setRequiresTool().hardnessAndResistance(3.5F)));
+                    .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(3.5F)));
 
     public static final RegistryObject<Block> VOID_ENERGY_BLOCK = registerBlock("void_energy_block", () -> new VoidEnergyBlock(AbstractBlock.Properties.create(Material.AIR).harvestLevel(4).hardnessAndResistance(7f)));
+
+    public static final RegistryObject<Block> VOID_STONE = registerBlock("void_stone", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
+
+    public static final RegistryObject<Block> VOID_STONE_BRICKS = registerBlock("void_stone_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
