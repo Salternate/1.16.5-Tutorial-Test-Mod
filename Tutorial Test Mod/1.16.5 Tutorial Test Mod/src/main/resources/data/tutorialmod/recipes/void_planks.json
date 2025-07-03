@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tutorialmod:void_log"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:void_planks",
+    "count": 9
+  }
+}

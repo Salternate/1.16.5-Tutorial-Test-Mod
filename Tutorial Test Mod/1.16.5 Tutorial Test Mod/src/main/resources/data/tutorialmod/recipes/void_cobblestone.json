@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tutorialmod:void_stone"
+  },
+  "result": "tutorialmod:void_cobblestone",
+  "experience": 7.0,
+  "cookingtime": 200
+}

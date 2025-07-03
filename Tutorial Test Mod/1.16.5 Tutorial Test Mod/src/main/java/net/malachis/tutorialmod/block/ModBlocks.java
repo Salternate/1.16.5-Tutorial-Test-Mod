@@ -40,11 +40,18 @@ public class ModBlocks
             () -> new FurnaceBlock(AbstractBlock.Properties.create(Material.IRON)
                     .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(3.5F)));
 
-    public static final RegistryObject<Block> VOID_ENERGY_BLOCK = registerBlock("void_energy_block", () -> new VoidEnergyBlock(AbstractBlock.Properties.create(Material.AIR).harvestLevel(4).hardnessAndResistance(7f)));
+    public static final RegistryObject<Block> VOID_ENERGY_BLOCK = registerBlock("void_energy_block", () -> new VoidEnergyBlock(AbstractBlock.Properties.create(Material.AIR).harvestLevel(5).hardnessAndResistance(7f)));
 
     public static final RegistryObject<Block> VOID_STONE = registerBlock("void_stone", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
     public static final RegistryObject<Block> VOID_STONE_BRICKS = registerBlock("void_stone_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
+
+    public static final RegistryObject<Block> VOID_COBBLESTONE = registerBlock("void_cobblestone", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2.5f)));
+
+    public static final RegistryObject<Block> VOID_BEDROCK = registerBlock("void_bedrock", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
+
+    public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2f)));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
