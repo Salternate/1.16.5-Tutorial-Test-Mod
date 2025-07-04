@@ -58,6 +58,7 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_PLANK_FENCE_GATE = registerBlock("void_plank_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(1.5f)));
 
+    public static final RegistryObject<Block> VOID_STONE_BRICK_SLAB = registerBlock("void_stone_brick_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f)));
 
 
 
