@@ -4,10 +4,7 @@ import net.malachis.tutorialmod.TutorialMod;
 import net.malachis.tutorialmod.block.custom.VoidEnergyBlock;
 import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.FurnaceBlock;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -56,6 +53,10 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_STONE_BRICK_STAIRS = registerBlock("void_stone_brick_stairs", () -> new StairsBlock(() -> VOID_STONE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
     public static final RegistryObject<Block> VOID_DIAMOND_BLOCK_STAIRS = registerBlock("void_diamond_block_stairs", () -> new StairsBlock(() -> VOID_DIAMOND_BLOCK.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
+
+    public static final RegistryObject<Block> VOID_PLANK_FENCE = registerBlock("void_plank_fence", () -> new FenceBlock(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(1.5f)));
+
+    public static final RegistryObject<Block> VOID_PLANK_FENCE_GATE = registerBlock("void_plank_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(1.5f)));
 
 
 
