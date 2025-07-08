@@ -15,6 +15,10 @@
   "block.tutorialmod.void_plank_fence": "Void Plank Fence",
   "block.tutorialmod.void_plank_fence_gate": "Void Plank Fence Gate",
   "block.tutorialmod.void_stone_brick_slab": "Void Stone Brick Slab",
+  "block.tutorialmod.void_stone_button": "Void Stone Button",
+  "block.tutorialmod.void_stone_pressure_plate": "Void Stone Pressure Plate",
+  "block.tutorialmod.void_diamond_button": "Void Diamond Button",
+  "block.tutorialmod.void_diamond_pressure_plate": "Void Diamond Pressure Plate",
 
   "block.tutorialmod.saturator": "Saturator",
 

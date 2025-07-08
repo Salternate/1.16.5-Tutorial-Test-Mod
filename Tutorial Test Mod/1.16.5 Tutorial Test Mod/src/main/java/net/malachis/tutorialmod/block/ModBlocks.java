@@ -8,15 +8,11 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraftforge.registries.IForgeRegistryEntry;
 
 import java.util.function.Supplier;
 
@@ -59,6 +55,14 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_PLANK_FENCE_GATE = registerBlock("void_plank_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(1.5f)));
 
     public static final RegistryObject<Block> VOID_STONE_BRICK_SLAB = registerBlock("void_stone_brick_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f)));
+
+    public static final RegistryObject<Block> VOID_STONE_BUTTON = registerBlock("void_stone_button", () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).doesNotBlockMovement()));
+
+    public static final RegistryObject<Block> VOID_STONE_PRESSURE_PLATE = registerBlock("void_stone_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f)));
+
+    public static final RegistryObject<Block> VOID_DIAMOND_BUTTON = registerBlock("void_diamond_button", () -> new StoneButtonBlock(AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).doesNotBlockMovement()));
+
+    public static final RegistryObject<Block> VOID_DIAMOND_PRESSURE_PLATE = registerBlock("void_diamond_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f)));
 
 
 
