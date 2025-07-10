@@ -22,6 +22,12 @@
 
   "block.tutorialmod.saturator": "Saturator",
 
+  "item.tutorialmod.void_diamond_sword": "Void Diamond Sword",
+  "item.tutorialmod.void_diamond_pickaxe": "Void Diamond Pickaxe",
+  "item.tutorialmod.void_diamond_axe": "Void Diamond Axe",
+  "item.tutorialmod.void_diamond_shovel": "Void Diamond Shovel",
+  "item.tutorialmod.void_diamond_hoe": "Void Diamond Hoe",
+
   "tooltip.tutorialmod.void_polarity_displacement_channeling_device": "\u00A77Absorbs a fragment of your \u00A7chealth\u00A7r\u00A77, leaving a\u00A7r \u00A76filler\u00A7r \u00A77behind.\n\nHold \u00A7r\u00A7eSHIFT\u00A7r \u00A77for\u00A7r \u00A7fAdvanced Info.",
   "tooltip.tutorialmod.void_polarity_displacement_channeling_device_shift": "\u00A77Absorbs a fragment of your \u00A7chealth\u00A7r\u00A77, leaving a\u00A7r \u00A76filler\u00A7r \u00A77behind.\nSwaps Health for Absorption 1:1.\u00A7r\nDisplaying\u00A7r \u00A7fAdvanced Info.",
 
