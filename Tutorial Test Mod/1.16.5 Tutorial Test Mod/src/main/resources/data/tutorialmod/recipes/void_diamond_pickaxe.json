@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " ! ",
+    " ! "
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:void_diamond"
+    },
+    "!": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:void_diamond_pickaxe"
+  }
+}

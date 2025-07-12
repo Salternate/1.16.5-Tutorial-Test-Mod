@@ -2,6 +2,7 @@ package net.malachis.tutorialmod.item;
 
 import net.malachis.tutorialmod.TutorialMod;
 import net.malachis.tutorialmod.item.custom.VoidPolarityDisplacementChannelingDevice;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 //import net.minecraft.item.ItemGroup;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,6 +41,13 @@ public class ModItems
 
     public static final RegistryObject<Item> VOID_DIAMOND_HOE = ITEMS.register("void_diamond_hoe",
             () -> new HoeItem(ModItemTier.VOID_DIAMOND, -3, 0.1f, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+
+    public static final RegistryObject<Item> VOID_DIAMOND_BOOTS = ITEMS.register("void_diamond_boots", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.FEET, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+    public static final RegistryObject<Item> VOID_DIAMOND_LEGGINGS = ITEMS.register("void_diamond_leggings", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.LEGS, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+    public static final RegistryObject<Item> VOID_DIAMOND_CHESTPLATE = ITEMS.register("void_diamond_chestplate", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.CHEST, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+    public static final RegistryObject<Item> VOID_DIAMOND_HELMET = ITEMS.register("void_diamond_helmet", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
 
     public static void register(IEventBus eventBus)
     {
