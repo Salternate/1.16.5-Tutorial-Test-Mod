@@ -64,6 +64,9 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_DIAMOND_PRESSURE_PLATE = registerBlock("void_diamond_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f)));
 
+    public static final RegistryObject<Block> VOID_DIAMOND_DOOR = registerBlock("void_diamond_door", () -> new DoorBlock(AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).notSolid()));
+
+    public static final RegistryObject<Block> VOID_DIAMOND_TRAPDOOR = registerBlock("void_diamond_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).notSolid()));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

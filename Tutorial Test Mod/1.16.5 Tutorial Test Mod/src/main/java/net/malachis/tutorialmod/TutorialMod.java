@@ -4,6 +4,8 @@ import net.malachis.tutorialmod.block.ModBlocks;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -57,7 +59,10 @@ public class TutorialMod
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(ModBlocks.VOID_DIAMOND_DOOR.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VOID_DIAMOND_TRAPDOOR.get(), RenderType.getCutout());
+        });
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
