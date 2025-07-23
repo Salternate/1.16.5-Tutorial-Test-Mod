@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.item;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.block.ModBlocks;
 import net.malachis.tutorialmod.item.custom.VoidPolarityDisplacementChannelingDevice;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -47,6 +48,12 @@ public class ModItems
     public static final RegistryObject<Item> VOID_DIAMOND_LEGGINGS = ITEMS.register("void_diamond_leggings", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.LEGS, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
     public static final RegistryObject<Item> VOID_DIAMOND_CHESTPLATE = ITEMS.register("void_diamond_chestplate", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.CHEST, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
     public static final RegistryObject<Item> VOID_DIAMOND_HELMET = ITEMS.register("void_diamond_helmet", () -> new ArmorItem(ModArmorMaterial.VOID_DIAMOND, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+
+
+    //public static final RegistryObject<Item> GOLDEN_PUMPKIN_SEED = ITEMS.register("golden_pumpkin_seed", () -> new BlockItem(ModBlocks.GOLDEN_PUMPKIN.get(), new Item.Properties().food(new Food.Builder().hunger(2).saturation(0.2f).fastToEat().build()).group(ModItemGroup.TUTORIAL_GROUP)));
+    public static final RegistryObject<Item> VOID_SEEDS = ITEMS.register("void_seeds", () -> new BlockItem(ModBlocks.VOID_CROP.get(), new Item.Properties().group(ModItemGroup.TUTORIAL_GROUP)));
+    public static final RegistryObject<Item> VOID_HARVEST = ITEMS.register("void_harvest", () -> new BlockItem(ModBlocks.VOID_CROP.get(), new Item.Properties().food( new Food.Builder().hunger(-1).saturation(-1.0f).setAlwaysEdible().build()).group(ModItemGroup.TUTORIAL_GROUP)));
+    // Above items must be changed to named items, add Void Saturation Effect to Void Harvest
 
 
     public static void register(IEventBus eventBus)

@@ -2,6 +2,7 @@ package net.malachis.tutorialmod.block;
 
 import net.malachis.tutorialmod.TutorialMod;
 import net.malachis.tutorialmod.block.custom.VoidEnergyBlock;
+import net.malachis.tutorialmod.block.custom.VoidCropBlock;
 import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.*;
@@ -67,6 +68,12 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_DIAMOND_DOOR = registerBlock("void_diamond_door", () -> new DoorBlock(AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).notSolid()));
 
     public static final RegistryObject<Block> VOID_DIAMOND_TRAPDOOR = registerBlock("void_diamond_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.CORAL).harvestTool(ToolType.PICKAXE).hardnessAndResistance(1f).notSolid()));
+
+    //public static final RegistryObject<Block> GOLDEN_PUMPKIN = registerBlock("golden_pumpkin", () -> new PumpkinBlock(AbstractBlock.Properties.create(Material.GOURD, MaterialColor.ADOBE).hardnessAndResistance(1.0f).sound(SoundType.GILDED_BLACKSTONE)));
+    //public static final RegistryObject<Block> ATTACHED_GOLDEN_PUMPKIN_STEM = registerBlock("attached_golden_pumpkin_stem", new AttachedStemBlock((StemGrownBlock)GOLDEN_PUMPKIN, AbstractBlock.Properties.create(Material.PLANTS).doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.WOOD)));
+    //public static final RegistryObject<Block> GOLDEN_PUMPKIN_STEM = registerBlock("golden_pumpkin_stem", new StemBlock((StemGrownBlock) GOLDEN_PUMPKIN, AbstractBlock.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.STEM)));
+
+    public static final RegistryObject<Block> VOID_CROP = BLOCKS.register("void_crop", () -> new VoidCropBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

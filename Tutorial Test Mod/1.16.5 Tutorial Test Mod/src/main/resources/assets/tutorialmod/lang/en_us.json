@@ -21,6 +21,9 @@
   "block.tutorialmod.void_diamond_pressure_plate": "Void Diamond Pressure Plate",
   "block.tutorialmod.void_diamond_door": "Void Diamond Door",
   "block.tutorialmod.void_diamond_trapdoor": "Void Diamond Trapdoor",
+  "block.tutorialmod.void_crop": "Void Crop",
+  "item.tutorialmod.void_seeds": "Void Seeds",
+  "item.tutorialmod.void_harvest": "Void Harvest",
 
   "block.tutorialmod.saturator": "Saturator",
 
