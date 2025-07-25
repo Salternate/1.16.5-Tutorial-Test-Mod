@@ -45,7 +45,7 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_BEDROCK = registerBlock("void_bedrock", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(7f)));
 
-    public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2f)));
+    //public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.create(Material.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2f)));
 
     public static final RegistryObject<Block> VOID_STONE_BRICK_STAIRS = registerBlock("void_stone_brick_stairs", () -> new StairsBlock(() -> VOID_STONE_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(2f)));
 
@@ -74,6 +74,13 @@ public class ModBlocks
     //public static final RegistryObject<Block> GOLDEN_PUMPKIN_STEM = registerBlock("golden_pumpkin_stem", new StemBlock((StemGrownBlock) GOLDEN_PUMPKIN, AbstractBlock.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.STEM)));
 
     public static final RegistryObject<Block> VOID_CROP = BLOCKS.register("void_crop", () -> new VoidCropBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> VOID_LOG = registerBlock("void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> VOID_WOOD = registerBlock("void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_VOID_LOG = registerBlock("stripped_void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_VOID_WOOD = registerBlock("stripped_void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

@@ -24,6 +24,10 @@
   "block.tutorialmod.void_crop": "Void Crop",
   "item.tutorialmod.void_seeds": "Void Seeds",
   "item.tutorialmod.void_harvest": "Void Harvest",
+  "block.tutorialmod.void_log": "Void Log",
+  "block.tutorialmod.void_wood": "Void Wood",
+  "block.tutorialmod.stripped_void_wood": "Stripped Void Wood",
+  "block.tutorialmod.stripped_void_log": "Stripped Void Log",
 
   "block.tutorialmod.saturator": "Saturator",
 
