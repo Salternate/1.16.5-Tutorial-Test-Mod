@@ -10,7 +10,7 @@ import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
 
-    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> VOID = register("void", Feature.TREE.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.VOID_LOG.get().getDefaultState()), new SimpleBlockStateProvider(ModBlocks.VOID_LEAVES.get().getDefaultState()), new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3), new StraightTrunkPlacer(5, 0, 0), new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build()));
+    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> VOID = register("void", Feature.TREE.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.VOID_LOG.get().getDefaultState()), new SimpleBlockStateProvider(ModBlocks.VOID_LEAVES.get().getDefaultState()), new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3), new StraightTrunkPlacer(5, 0, 0), new TwoLayerFeature(0, 0, 0))).setIgnoreVines().build()));
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String key, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, key, configuredFeature);
