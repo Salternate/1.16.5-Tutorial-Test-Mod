@@ -3,10 +3,12 @@ package net.malachis.tutorialmod.block;
 import net.malachis.tutorialmod.TutorialMod;
 import net.malachis.tutorialmod.block.custom.VoidEnergyBlock;
 import net.malachis.tutorialmod.block.custom.VoidCropBlock;
+import net.malachis.tutorialmod.block.custom.trees.VoidTree;
 import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
@@ -81,6 +83,9 @@ public class ModBlocks
     public static final RegistryObject<Block> STRIPPED_VOID_WOOD = registerBlock("stripped_void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
 
+    public static final RegistryObject<Block> VOID_LEAVES = registerBlock("void_leaves", () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT).notSolid()));
+    public static final RegistryObject<Block> VOID_SAPLING = registerBlock("void_sapling", () -> new SaplingBlock(new VoidTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
+    // Add Void Apples as drops for Void Leaves
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

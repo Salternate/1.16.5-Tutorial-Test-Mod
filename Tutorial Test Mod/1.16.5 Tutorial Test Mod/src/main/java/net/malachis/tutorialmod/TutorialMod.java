@@ -64,7 +64,11 @@ public class TutorialMod
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_DIAMOND_DOOR.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_DIAMOND_TRAPDOOR.get(), RenderType.getCutout());
+
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_CROP.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.VOID_LEAVES.get(), RenderType.getCutout());
+            RenderTypeLookup.setRenderLayer(ModBlocks.VOID_SAPLING.get(), RenderType.getCutout());
         });
     }
 
