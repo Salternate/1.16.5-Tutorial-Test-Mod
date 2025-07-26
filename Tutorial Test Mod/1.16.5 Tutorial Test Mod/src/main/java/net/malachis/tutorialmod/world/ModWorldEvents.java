@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.world;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.world.gen.ModOreGeneration;
 import net.malachis.tutorialmod.world.gen.ModTreeGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +13,7 @@ public class ModWorldEvents {
     @SubscribeEvent
     public static void biomeLoadingEvent(final BiomeLoadingEvent event)
     {
+        ModOreGeneration.generateOres(event);
         ModTreeGeneration.generateTrees(event);
     }
 }
