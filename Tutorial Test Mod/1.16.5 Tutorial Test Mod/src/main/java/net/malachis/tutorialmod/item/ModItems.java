@@ -55,6 +55,9 @@ public class ModItems
     public static final RegistryObject<Item> VOID_HARVEST = ITEMS.register("void_harvest", () -> new BlockItem(ModBlocks.VOID_CROP.get(), new Item.Properties().food( new Food.Builder().hunger(-1).saturation(-1.0f).setAlwaysEdible().build()).group(ModItemGroup.TUTORIAL_GROUP)));
     // Above items must be changed to named items, add Void Saturation Effect to Void Harvest
 
+    public static final RegistryObject<Item> VOID_DIAMOND_HORSE_ARMOR = ITEMS.register("void_diamond_horse_armor", () -> new HorseArmorItem(17, "void_diamond", new Item.Properties().maxStackSize(1).group(ModItemGroup.TUTORIAL_GROUP)));
+
+
 
     public static void register(IEventBus eventBus)
     {
