@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.world;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.world.gen.ModFlowerGeneration;
 import net.malachis.tutorialmod.world.gen.ModOreGeneration;
 import net.malachis.tutorialmod.world.gen.ModTreeGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
@@ -14,6 +15,8 @@ public class ModWorldEvents {
     public static void biomeLoadingEvent(final BiomeLoadingEvent event)
     {
         ModOreGeneration.generateOres(event);
+
+        ModFlowerGeneration.generateFlowers(event);
         ModTreeGeneration.generateTrees(event);
     }
 }

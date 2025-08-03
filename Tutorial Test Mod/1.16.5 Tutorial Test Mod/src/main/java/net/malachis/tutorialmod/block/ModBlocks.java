@@ -10,6 +10,8 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -85,6 +87,8 @@ public class ModBlocks
     public static final RegistryObject<Block> VOID_LEAVES = registerBlock("void_leaves", () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> VOID_SAPLING = registerBlock("void_sapling", () -> new SaplingBlock(new VoidTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
     // Add Void Apples as drops for Void Leaves
+
+    public static final RegistryObject<Block> VOID_FLOWER = registerBlock("void_flower", () -> new FlowerBlock(Effects.SATURATION, 77, AbstractBlock.Properties.from(Blocks.DANDELION)));
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)

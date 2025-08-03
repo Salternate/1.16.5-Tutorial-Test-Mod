@@ -67,6 +67,8 @@ public class TutorialMod
 
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_LEAVES.get(), RenderType.getCutout());
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_SAPLING.get(), RenderType.getCutout());
+
+            RenderTypeLookup.setRenderLayer(ModBlocks.VOID_FLOWER.get(), RenderType.getCutout());
         });
     }
 
