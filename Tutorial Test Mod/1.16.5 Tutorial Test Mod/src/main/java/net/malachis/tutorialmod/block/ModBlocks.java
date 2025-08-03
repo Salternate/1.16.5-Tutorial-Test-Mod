@@ -8,7 +8,6 @@ import net.malachis.tutorialmod.item.ModItemGroup;
 import net.malachis.tutorialmod.item.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.trees.OakTree;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
