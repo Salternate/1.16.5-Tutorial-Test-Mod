@@ -1,6 +1,7 @@
 package net.malachis.tutorialmod.block;
 
 import net.malachis.tutorialmod.TutorialMod;
+import net.malachis.tutorialmod.block.custom.SaturatorBlock;
 import net.malachis.tutorialmod.block.custom.VoidEnergyBlock;
 import net.malachis.tutorialmod.block.custom.VoidCropBlock;
 import net.malachis.tutorialmod.block.custom.trees.VoidTree;
@@ -35,7 +36,7 @@ public class ModBlocks
                     .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(5f)));
 
     public static final RegistryObject<Block> SATURATOR = registerBlock("saturator",
-            () -> new FurnaceBlock(AbstractBlock.Properties.create(Material.IRON)
+            () -> new SaturatorBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .harvestLevel(5).harvestTool(ToolType.PICKAXE).setRequiresTool().hardnessAndResistance(3.5F)));
 
     public static final RegistryObject<Block> VOID_ENERGY_BLOCK = registerBlock("void_energy_block", () -> new VoidEnergyBlock(AbstractBlock.Properties.create(Material.AIR).harvestLevel(5).hardnessAndResistance(7f)));

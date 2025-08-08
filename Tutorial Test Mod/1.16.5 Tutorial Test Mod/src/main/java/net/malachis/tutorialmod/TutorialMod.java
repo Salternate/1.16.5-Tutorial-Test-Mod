@@ -2,8 +2,12 @@ package net.malachis.tutorialmod;
 
 import com.google.common.collect.ImmutableMap;
 import net.malachis.tutorialmod.block.ModBlocks;
+import net.malachis.tutorialmod.container.ModContainers;
 import net.malachis.tutorialmod.item.ModItems;
+import net.malachis.tutorialmod.screen.SaturatorScreen;
+import net.malachis.tutorialmod.tileentity.ModTileEntities;
 import net.minecraft.block.Block;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.AxeItem;
@@ -38,6 +42,8 @@ public class TutorialMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModTileEntities.register(eventBus);
+        ModContainers.register(eventBus);
 
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -69,6 +75,8 @@ public class TutorialMod
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_SAPLING.get(), RenderType.getCutout());
 
             RenderTypeLookup.setRenderLayer(ModBlocks.VOID_FLOWER.get(), RenderType.getCutout());
+
+            ScreenManager.registerFactory(ModContainers.SATURATOR_CONTAINER.get(), SaturatorScreen::new);
         });
     }
 
