@@ -32,6 +32,8 @@
   "block.tutorialmod.void_leaves": "Void Leaves",
   "item.tutorialmod.void_diamond_horse_armor": "Void Diamond Horse Armor",
   "block.tutorialmod.void_flower": "Void Flower",
+  "block.tutorialmod.void_grass_block": "Void Grass",
+  "block.tutorialmod.void_dirt": "Void Dirt",
 
   "block.tutorialmod.saturator": "Saturator",
   "screen.tutorialmod.saturator": "Saturator",

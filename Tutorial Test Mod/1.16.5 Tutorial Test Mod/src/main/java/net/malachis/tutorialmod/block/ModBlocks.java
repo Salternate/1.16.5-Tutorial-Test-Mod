@@ -11,7 +11,6 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Effect;
 import net.minecraft.potion.Effects;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -79,17 +78,21 @@ public class ModBlocks
 
     public static final RegistryObject<Block> VOID_CROP = BLOCKS.register("void_crop", () -> new VoidCropBlock(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
-    public static final RegistryObject<Block> VOID_LOG = registerBlock("void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG)));
-    public static final RegistryObject<Block> VOID_WOOD = registerBlock("void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD)));
-    public static final RegistryObject<Block> STRIPPED_VOID_LOG = registerBlock("stripped_void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG)));
-    public static final RegistryObject<Block> STRIPPED_VOID_WOOD = registerBlock("stripped_void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD)));
-    public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> VOID_LOG = registerBlock("void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_LOG).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> VOID_WOOD = registerBlock("void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STRIPPED_VOID_LOG = registerBlock("stripped_void_log", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> STRIPPED_VOID_WOOD = registerBlock("stripped_void_wood", () -> new RotatedPillarBlock(AbstractBlock.Properties.from(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> VOID_PLANKS = registerBlock("void_planks", () -> new Block(AbstractBlock.Properties.from(Blocks.OAK_PLANKS).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> VOID_LEAVES = registerBlock("void_leaves", () -> new LeavesBlock(AbstractBlock.Properties.create(Material.LEAVES).hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> VOID_SAPLING = registerBlock("void_sapling", () -> new SaplingBlock(new VoidTree(), AbstractBlock.Properties.from(Blocks.OAK_SAPLING)));
     // Add Void Apples as drops for Void Leaves
 
     public static final RegistryObject<Block> VOID_FLOWER = registerBlock("void_flower", () -> new FlowerBlock(Effects.SATURATION, 77, AbstractBlock.Properties.from(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> VOID_GRASS_BLOCK = registerBlock("void_grass_block", () -> new GrassBlock(AbstractBlock.Properties.create(Material.EARTH).tickRandomly().harvestLevel(5).harvestTool(ToolType.SHOVEL).hardnessAndResistance(0.7f).sound(SoundType.PLANT)));
+    public static final RegistryObject<Block> VOID_DIRT = registerBlock("void_dirt", () -> new Block(AbstractBlock.Properties.create(Material.EARTH).harvestLevel(5).harvestTool(ToolType.SHOVEL).hardnessAndResistance(0.63f).sound(SoundType.GROUND)));
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
