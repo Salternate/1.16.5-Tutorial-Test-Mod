@@ -6,6 +6,7 @@ import net.malachis.tutorialmod.container.ModContainers;
 import net.malachis.tutorialmod.item.ModItems;
 import net.malachis.tutorialmod.screen.SaturatorScreen;
 import net.malachis.tutorialmod.tileentity.ModTileEntities;
+import net.malachis.tutorialmod.world.structure.ModStructures;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
@@ -45,6 +46,8 @@ public class TutorialMod
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
 
+        ModStructures.register(eventBus);
+
         eventBus.addListener(this::setup);
         // Register the enqueueIMC method for modloading
         eventBus.addListener(this::enqueueIMC);
@@ -61,6 +64,8 @@ public class TutorialMod
     {
         event.enqueueWork(() -> {
             AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP).put(ModBlocks.VOID_LOG.get(), ModBlocks.STRIPPED_VOID_LOG.get()).put(ModBlocks.VOID_WOOD.get(), ModBlocks.STRIPPED_VOID_WOOD.get()).build();
+
+            ModStructures.setupStructures();
         });
     }
 
